@@ -1,5 +1,5 @@
 import 'package:test_api/test_api.dart';
-import 'package:flutter_practice_api_calls/mocks/mock_location.dart';
+import '../../lib/mocks/mock_location.dart';
 
 void main() {
   test('test fetchAny', () {
