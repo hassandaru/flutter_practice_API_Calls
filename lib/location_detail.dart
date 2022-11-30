@@ -26,18 +26,18 @@ class LocationDetail extends StatelessWidget {
   List<Widget> _renderBody(BuildContext context, Location location) {
     var result = <Widget>[];
     result.add(_bannerImage(location.url, 170.0));
-    result.addAll(_renderFacts(context, location));
+    // result.addAll(_renderFacts(context, location));
     return result;
   }
 
-  List<Widget> _renderFacts(BuildContext context, Location location) {
-    var result = <Widget>[];
-    for (int i = 0; i < location.facts.length; i++) {
-      result.add(_sectionTitle(location.facts[i].title));
-      result.add(_sectionText(location.facts[i].text));
-    }
-    return result;
-  }
+  // List<Widget> _renderFacts(BuildContext context, Location location) {
+  //   var result = <Widget>[];
+  //   for (int i = 0; i < location.facts.length; i++) {
+  //     result.add(_sectionTitle(location.facts[i].title));
+  //     result.add(_sectionText(location.facts[i].text));
+  //   }
+  //   return result;
+  // }
 
   Widget _sectionTitle(String text) {
     return Container(
